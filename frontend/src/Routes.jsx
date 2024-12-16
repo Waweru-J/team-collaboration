@@ -11,6 +11,10 @@ import {
 import Eligibility from "./pages/Eligibility";
 import Contact from "./pages/Contact";
 import Services from "./components/Services";
+import ServiceDetails from "./pages/ServiceDetails";
+import AboutUs from "./pages/AboutUs";
+import Sustainability from "./pages/Sustainability";
+import GlobalPartnerships from "./pages/GlobalPartnership";
   
   // Create routes with individual ErrorBoundary wrapped around components
   const router = createBrowserRouter(
@@ -57,6 +61,39 @@ import Services from "./components/Services";
               </ErrorBoundary>
             }
           />
+           <Route
+            path="/services/:serviceId"
+            element={
+              <ErrorBoundary>
+                <ServiceDetails />
+              </ErrorBoundary>
+            }
+          />
+           <Route
+            path="/about"
+            element={
+              <ErrorBoundary>
+                <AboutUs />
+              </ErrorBoundary>
+            }
+          />
+           <Route
+            path="/sustainability"
+            element={
+              <ErrorBoundary>
+                <Sustainability />
+              </ErrorBoundary>
+            }
+          />
+           <Route
+            path="/global-partnerships"
+            element={
+              <ErrorBoundary>
+                <GlobalPartnerships />
+              </ErrorBoundary>
+            }
+          />
+         
         </Route>
       </>
     )

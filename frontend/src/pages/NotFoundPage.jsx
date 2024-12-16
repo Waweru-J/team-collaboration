@@ -10,7 +10,7 @@ const NotFoundPage = () => {
       <p className="text-gray-600 mt-2">The page youre looking for doesnt exist.</p>
       <Link
         to="/"
-        className="mt-6 inline-block bg-blue-600 text-white py-2 px-6 rounded"
+        className="mt-6 inline-block bg-teal-600 text-white py-2 px-6 rounded"
       >
         Go Back Home
       </Link>
